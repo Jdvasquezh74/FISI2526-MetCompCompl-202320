@@ -1,0 +1,12 @@
+En primer lugar, se bifurcó y clonó localmente el repositorio en Github de la complementaria.
+Posteriormente, se creó una carpeta desde la línea de comandos con mkdir, usando el apellido 
+como nombre. A continuación, se descargó el archivo con wget -i enlace.txt [-O Vasquez], la 
+última parte del código hubo que omitirla debido a los permisos concedidos sobre el directorio.
+Posteriormente, se usó el comando touch constantes_electron.txt luego de usar cd Vasquez para 
+crear el archivo donde se guardaría la información. Finalmente se usó...
+
+awk -F "," "{if($1~/Electron/)print$1}" Fundamental-Physical-Constants.csv > 
+Vasquez/constantes_electron.txt
+
+El cual filtra el contenido de las líneas en el archivo para extraer de la primera columna
+solo aquellas con la palabra "Electron", guardándolas en el archivo constantes_electron.txt. 
