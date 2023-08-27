@@ -7,6 +7,6 @@ awk -F "," 'NR>1{print $3}' indices_refraccion.csv > materiales.txt
 while IFS="," read categoria fabricante material enlace;
 do 
 mkdir -p "$categoria"
-wget -P "$categoria/" $enlace
+wget -O "$categoria/$material.yml" $enlace
 done < indices_refraccion.csv
 
