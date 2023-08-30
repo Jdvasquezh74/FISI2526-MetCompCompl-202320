@@ -1,0 +1,2 @@
+from expansiontermicamineral import ExpansionTermicaMineral
+
